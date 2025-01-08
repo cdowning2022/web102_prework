@@ -43,7 +43,7 @@ function addGamesToPage(games) {
         // TIP: if your images are not displaying, make sure there is space
         // between the end of the src attribute and the end of the tag ("/>")
         gamesCard.innerHTML = `
-            <img src="${games.image}" alt="${games.name}" class="games.image">
+            <img src ="${games.image}" alt="${games.name}" class="games.image"></img>
                 <h2>${games.name}</h2>
                 <p>${games.description}</p>
                 <p>Genre: ${games.genre}</p>
@@ -56,7 +56,7 @@ function addGamesToPage(games) {
 
 // call the function we just defined using the correct variable
 // later, we'll call this function using a different list of games
-
+addGamesToPage(GAMES_JSON);
 
 /*************************************************************************************
  * Challenge 4: Create the summary statistics at the top of the page displaying the
