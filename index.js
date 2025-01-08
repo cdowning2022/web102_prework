@@ -43,11 +43,11 @@ function addGamesToPage(games) {
         // TIP: if your images are not displaying, make sure there is space
         // between the end of the src attribute and the end of the tag ("/>")
         gamesCard.innerHTML = `
-            <img src ="${games.image}" alt="${games.name}" class="games.image"></img>
-                <h2>${games.name}</h2>
-                <p>${games.description}</p>
-                <p>Genre: ${games.genre}</p>
-                <p>Release Date: ${games.releaseDate}</p>
+            <img src ="${GAMES_JSON.image}" alt="${GAMES_JSON.name}" class="games.image"></img>
+                <h2>${GAMES_JSON.name}</h2>
+                <p>${GAMES_JSON.description}</p>
+                <p>Genre: ${GAMES_JSON.genre}</p>
+                <p>Release Date: ${GAMES_JSON.releaseDate}</p>
                 `;
         // append the game to the games-container
         gamesContainer.appendChild(gamesCard);
