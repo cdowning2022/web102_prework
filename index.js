@@ -52,11 +52,11 @@ function addGamesToPage(games) {
         // append the game to the games-container
         gamesContainer.appendChild(gamesCard);
         }
+        addGamesToPage(GAMES_JSON);
 }
 
 // call the function we just defined using the correct variable
 // later, we'll call this function using a different list of games
-addGamesToPage(GAMES_JSON);
 
 /*************************************************************************************
  * Challenge 4: Create the summary statistics at the top of the page displaying the
